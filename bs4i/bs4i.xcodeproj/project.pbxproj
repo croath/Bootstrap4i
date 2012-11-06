@@ -15,6 +15,8 @@
 		182EB232164966DF0005575F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182EB231164966DF0005575F /* AppDelegate.m */; };
 		182EB235164966DF0005575F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182EB234164966DF0005575F /* ViewController.m */; };
 		182EB238164966DF0005575F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182EB236164966DF0005575F /* ViewController.xib */; };
+		182EB247164967D70005575F /* BSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182EB246164967D70005575F /* BSButton.m */; };
+		182EB249164968670005575F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182EB248164968670005575F /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,9 @@
 		182EB233164966DF0005575F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		182EB234164966DF0005575F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		182EB237164966DF0005575F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		182EB245164967D70005575F /* BSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSButton.h; sourceTree = "<group>"; };
+		182EB246164967D70005575F /* BSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSButton.m; sourceTree = "<group>"; };
+		182EB248164968670005575F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182EB249164968670005575F /* QuartzCore.framework in Frameworks */,
 				182EB222164966DF0005575F /* UIKit.framework in Frameworks */,
 				182EB224164966DF0005575F /* Foundation.framework in Frameworks */,
 				182EB226164966DF0005575F /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +73,7 @@
 		182EB220164966DF0005575F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				182EB248164968670005575F /* QuartzCore.framework */,
 				182EB221164966DF0005575F /* UIKit.framework */,
 				182EB223164966DF0005575F /* Foundation.framework */,
 				182EB225164966DF0005575F /* CoreGraphics.framework */,
@@ -77,6 +84,7 @@
 		182EB227164966DF0005575F /* bs4i */ = {
 			isa = PBXGroup;
 			children = (
+				182EB242164967AD0005575F /* BSControl */,
 				182EB230164966DF0005575F /* AppDelegate.h */,
 				182EB231164966DF0005575F /* AppDelegate.m */,
 				182EB233164966DF0005575F /* ViewController.h */,
@@ -96,6 +104,23 @@
 				182EB22F164966DF0005575F /* bs4i-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		182EB242164967AD0005575F /* BSControl */ = {
+			isa = PBXGroup;
+			children = (
+				182EB244164967B80005575F /* BSButton */,
+			);
+			name = BSControl;
+			sourceTree = "<group>";
+		};
+		182EB244164967B80005575F /* BSButton */ = {
+			isa = PBXGroup;
+			children = (
+				182EB245164967D70005575F /* BSButton.h */,
+				182EB246164967D70005575F /* BSButton.m */,
+			);
+			name = BSButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +188,7 @@
 				182EB22E164966DF0005575F /* main.m in Sources */,
 				182EB232164966DF0005575F /* AppDelegate.m in Sources */,
 				182EB235164966DF0005575F /* ViewController.m in Sources */,
+				182EB247164967D70005575F /* BSButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +298,7 @@
 				182EB23D164966DF0005575F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
