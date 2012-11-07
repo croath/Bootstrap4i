@@ -113,6 +113,88 @@
 
 - (void)initNormalLayer{
     normalLayer = [[CAGradientLayer alloc] init];
+    
+    float redUp, greenUp, blueUp, alphaUp, redDown, greenDown, blueDown, alphaDown;
+    alphaUp = alphaDown = 1.0;
+    switch (bsType) {
+        case BSButtonTypePrimary:
+        {
+            redUp = 56.0 / 255.0;
+            greenUp = 135.0 / 255.0;
+            blueUp = 198.0 / 255.0;
+            
+            redDown = 17.0 / 255.0;
+            greenDown = 83.0 / 255.0;
+            blueDown = 196.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeInfo:
+        {
+            redUp = 116.0 / 255.0;
+            greenUp = 189.0 / 255.0;
+            blueUp = 215.0 / 255.0;
+            
+            redDown = 79.0 / 255.0;
+            greenDown = 149.0 / 255.0;
+            blueDown = 176.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeSuccess:
+        {
+            redUp = 124.0 / 255.0;
+            greenUp = 188.0 / 255.0;
+            blueUp = 105.0 / 255.0;
+            
+            redDown = 104.0 / 255.0;
+            greenDown = 157.0 / 255.0;
+            blueDown = 88.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeWarning:
+        {
+            redUp = 240.0 / 255.0;
+            greenUp = 180.0 / 255.0;
+            blueUp = 100.0 / 255.0;
+            
+            redDown = 234.0 / 255.0;
+            greenDown = 151.0 / 255.0;
+            blueDown = 65.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeDanger:
+        {
+            redUp = 219.0 / 255.0;
+            greenUp = 106.0 / 255.0;
+            blueUp = 100.0 / 255.0;
+            
+            redDown = 174.0 / 255.0;
+            greenDown = 69.0 / 255.0;
+            blueDown = 61.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeInverse:
+        {
+            redUp = 67.0 / 255.0;
+            greenUp = 67.0 / 255.0;
+            blueUp = 67.0 / 255.0;
+            
+            redDown = 34.0 / 255.0;
+            greenDown = 34.0 / 255.0;
+            blueDown = 34.0 / 255.0;
+        }
+            break;
+        case BSButtonTypeLink:
+        {
+            redUp = greenUp = blueUp = alphaUp = redDown = greenDown = blueDown = alphaDown = 0.0;
+        }
+            break;
+        default:
+        {
+        }
+            break;
+    }
+
+    
     normalLayer.colors = [NSArray arrayWithObjects:
                           (id)[UIColor colorWithRed:57.0/255.0 green:136.0/255.0 blue:198.0/255.0 alpha:1.0].CGColor, 
                           (id)[UIColor colorWithRed:17.0/255.0 green:83.0/255.0 blue:196.0/255.0 alpha:1.0].CGColor,
