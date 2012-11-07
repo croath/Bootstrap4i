@@ -22,6 +22,9 @@ typedef enum{
 
 @interface BSButton : UIButton{
     CAGradientLayer *normalLayer, *touchInsideLayer;
+    BSButtonType bsType;
 }
+
+- (id)initWithType:(BSButtonType)type;
 
 @end

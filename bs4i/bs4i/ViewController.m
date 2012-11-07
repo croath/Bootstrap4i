@@ -7,10 +7,7 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
+#import "BSButton.h"
 
 @implementation ViewController
 
@@ -18,6 +15,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    BSButton *button = [[BSButton alloc] initWithType:BSButtonTypePrimary];
+    [button setFrame:CGRectMake(100, 100, 100, 30)];
+    [self.view addSubview:button];
+    [button release];
 }
 
 - (void)viewDidUnload
