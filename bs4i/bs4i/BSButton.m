@@ -90,6 +90,7 @@
         }
             break;
     }
+    [self.layer setBorderWidth:1.0f];
     [self.layer setBorderColor:[[UIColor colorWithRed:red green:green blue:blue alpha:alpha] CGColor]];
     [self addTarget:self action:@selector(pressed) forControlEvents:UIControlEventTouchDown];
     [self addTarget:self action:@selector(moveOut) forControlEvents:(UIControlEventTouchUpInside | UIControlEventTouchUpOutside | UIControlEventTouchDragExit)];
@@ -190,14 +191,21 @@
             break;
         default:
         {
+            redUp = 254.0 / 255.0;
+            greenUp = 254.0 / 255.0;
+            blueUp = 254.0 / 255.0;
+            
+            redDown = 230.0 / 255.0;
+            greenDown = 230.0 / 255.0;
+            blueDown = 230.0 / 255.0;
         }
             break;
     }
 
     
     normalLayer.colors = [NSArray arrayWithObjects:
-                          (id)[UIColor colorWithRed:57.0/255.0 green:136.0/255.0 blue:198.0/255.0 alpha:1.0].CGColor, 
-                          (id)[UIColor colorWithRed:17.0/255.0 green:83.0/255.0 blue:196.0/255.0 alpha:1.0].CGColor,
+                          (id)[UIColor colorWithRed:redUp green:greenUp blue:blueUp alpha:alphaUp].CGColor, 
+                          (id)[UIColor colorWithRed:redDown green:greenDown blue:blueDown alpha:alphaDown].CGColor,
                           nil];
 }
 
