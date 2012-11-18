@@ -1,14 +1,14 @@
 //
-//  BSTextFIeld.m
+//  BSTextField.m
 //  bs4i
 //
 //  Created by  on 12-11-18.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "BSTextFIeld.h"
+#import "BSTextField.h"
 
-@implementation BSTextFIeld
+@implementation BSTextField
 
 - (id)initWithFrame:(CGRect)frame
 {

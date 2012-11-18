@@ -1,5 +1,5 @@
 //
-//  BSTextFIeld.h
+//  BSTextField.h
 //  bs4i
 //
 //  Created by  on 12-11-18.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BSTextFIeld : UITextField
+@interface BSTextField : UITextField
 
 @end
