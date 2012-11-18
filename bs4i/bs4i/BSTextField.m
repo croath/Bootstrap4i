@@ -16,6 +16,7 @@
     if (self) {
         // Initialization code
         [self setBorderStyle:UITextBorderStyleRoundedRect];
+        [self setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     }
     return self;
 }
