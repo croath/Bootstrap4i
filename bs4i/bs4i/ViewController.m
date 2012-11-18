@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BSButton.h"
+#import "BSTextField.h"
 
 @implementation ViewController
 
@@ -16,39 +17,43 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     BSButton *b1 = [[BSButton alloc] initWithType:BSButtonTypeDefault];
-    [b1 setFrame:CGRectMake(100, 100, 100, 30)];
+    [b1 setFrame:CGRectMake(100, 50, 100, 30)];
     [self.view addSubview:b1];
     [b1 release];
     
     BSButton *b2 = [[BSButton alloc] initWithType:BSButtonTypePrimary];
-    [b2 setFrame:CGRectMake(100, 150, 100, 30)];
+    [b2 setFrame:CGRectMake(100, 100, 100, 30)];
     [self.view addSubview:b2];
     [b2 release];
     
     BSButton *b3 = [[BSButton alloc] initWithType:BSButtonTypeInfo];
-    [b3 setFrame:CGRectMake(100, 200, 100, 30)];
+    [b3 setFrame:CGRectMake(100, 150, 100, 30)];
     [self.view addSubview:b3];
     [b3 release];
     
     BSButton *b4 = [[BSButton alloc] initWithType:BSButtonTypeSuccess];
-    [b4 setFrame:CGRectMake(100, 250, 100, 30)];
+    [b4 setFrame:CGRectMake(100, 200, 100, 30)];
     [self.view addSubview:b4];
     [b4 release];
     
     BSButton *b5 = [[BSButton alloc] initWithType:BSButtonTypeWarning];
-    [b5 setFrame:CGRectMake(100, 300, 100, 30)];
+    [b5 setFrame:CGRectMake(100, 250, 100, 30)];
     [self.view addSubview:b5];
     [b5 release];
     
     BSButton *b6 = [[BSButton alloc] initWithType:BSButtonTypeDanger];
-    [b6 setFrame:CGRectMake(100, 350, 100, 30)];
+    [b6 setFrame:CGRectMake(100, 300, 100, 30)];
     [self.view addSubview:b6];
     [b6 release];
     
     BSButton *b7 = [[BSButton alloc] initWithType:BSButtonTypeInverse];
-    [b7 setFrame:CGRectMake(100, 400, 100, 30)];
+    [b7 setFrame:CGRectMake(100, 350, 100, 30)];
     [self.view addSubview:b7];
     [b7 release];
+    
+    BSTextField* t1 = [[BSTextField alloc] initWithFrame:CGRectMake(100, 10, 100, 31)];
+    [self.view addSubview:t1];
+    [t1 release];
 }
 
 - (void)viewDidUnload
