@@ -17,6 +17,7 @@
 		182EB238164966DF0005575F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 182EB236164966DF0005575F /* ViewController.xib */; };
 		182EB247164967D70005575F /* BSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 182EB246164967D70005575F /* BSButton.m */; };
 		182EB249164968670005575F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182EB248164968670005575F /* QuartzCore.framework */; };
+		1831E253165897A200BC92B8 /* BSTextFIeld.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831E252165897A200BC92B8 /* BSTextFIeld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		182EB245164967D70005575F /* BSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSButton.h; sourceTree = "<group>"; };
 		182EB246164967D70005575F /* BSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSButton.m; sourceTree = "<group>"; };
 		182EB248164968670005575F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1831E251165897A200BC92B8 /* BSTextFIeld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTextFIeld.h; sourceTree = "<group>"; };
+		1831E252165897A200BC92B8 /* BSTextFIeld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTextFIeld.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 		182EB242164967AD0005575F /* BSControl */ = {
 			isa = PBXGroup;
 			children = (
+				1831E24F1658963D00BC92B8 /* BSTextField */,
 				182EB244164967B80005575F /* BSButton */,
 			);
 			name = BSControl;
@@ -121,6 +125,15 @@
 				182EB246164967D70005575F /* BSButton.m */,
 			);
 			name = BSButton;
+			sourceTree = "<group>";
+		};
+		1831E24F1658963D00BC92B8 /* BSTextField */ = {
+			isa = PBXGroup;
+			children = (
+				1831E251165897A200BC92B8 /* BSTextFIeld.h */,
+				1831E252165897A200BC92B8 /* BSTextFIeld.m */,
+			);
+			name = BSTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 				182EB232164966DF0005575F /* AppDelegate.m in Sources */,
 				182EB235164966DF0005575F /* ViewController.m in Sources */,
 				182EB247164967D70005575F /* BSButton.m in Sources */,
+				1831E253165897A200BC92B8 /* BSTextFIeld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
